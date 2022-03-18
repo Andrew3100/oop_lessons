@@ -1,0 +1,22 @@
+// Проверка принадлежности объекта к классу - instanceof
+    var_dump($product instanceof Shop);
+
+
+
+// Область видимости private блокирует доступ к изменению значения вне класса
+    private $name;
+
+
+// Область видимости public даёт доступ к изменению значения вне класса
+    public $name;
+
+
+
+// Конструктор - позволяет передавать значения непосредственно при создании экземпляра класса
+    public function __construct($name,$password,$email,$city){
+        $this->name = $name;
+        $this->password = $password;
+        $this->email = $email;
+        $this->city = $city;
+    }
+
